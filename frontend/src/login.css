@@ -1,0 +1,67 @@
+.login-layout {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .login-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background: white;
+  }
+  
+  .card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 450px;
+  }
+  
+  .headinglogin {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .inputlogin {
+    width: 100%;
+    height: 55px;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+  }
+  
+  .login-btn {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .account-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .recaptcha-text {
+    font-size: 0.75rem;
+    color: #777;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  

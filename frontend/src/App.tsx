@@ -2,8 +2,10 @@ import React from 'react'
 import { useState } from 'react'
 import './App.css'
 import Horizon from './assets/images/Horizon.png' 
+import { useNavigate } from 'react-router-dom'
 
 function App() {
+  const navigate=useNavigate();
   return (
     <div>
       <div className='upperdiv'>
@@ -34,8 +36,8 @@ function App() {
             <p className='subheading'>Manage Your Educational Institution's Inventory without any Hassles<br/>
               with MasterSoft's Store Management Information System!</p>
             <div className='buttonContainer'>
-              <button className='signin'>Sign Up Here </button>
-              <button className='login'>Already a Customer ? Login Here </button>
+            <button className='signin' onClick={() => navigate('/signup')}>Sign Up Here</button>
+              <button className='login' onClick={()=> navigate('/login')}>Already a Customer ? Login Here </button>
             </div>
         </div>
           <img className='banner' src='https://www.iitms.co.in/higher-education-erp/img/Store-Management-Systems.webp'/>

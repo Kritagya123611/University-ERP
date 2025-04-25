@@ -1,0 +1,135 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 590px;
+    padding: 40px 20px; 
+    box-sizing: border-box;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 16px;
+}
+
+.headingsignup {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.inputsignup {
+    height: 50px;
+    width: 100%;
+    padding: 0 16px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #000;
+    transition: border-color 0.3s ease;
+}
+
+.inputsignup:focus {
+    border-color: #000;
+    outline: none;
+}
+
+.signup-btn {
+    height: 50px;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #222;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.checkbox-container input {
+    width: 16px;
+    height: 16px;
+}
+
+.account-link {
+    font-size: 0.95rem;
+    color: #333;
+    text-align: center;
+}
+
+.account-link a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.recaptcha-text {
+    font-size: 0.75rem;
+    color: #777;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.recaptcha-text a {
+    color: #000;
+    text-decoration: underline;
+}
+.signup-layout {
+    display: flex;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.signup-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.signup-image img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.signup-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
