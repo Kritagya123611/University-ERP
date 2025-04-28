@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar2 {
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.rightitems {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-weight: 500;
+    color: black;
+}
+
+.content {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.upper3, .lower3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.name, .attendance, .performance, .classes, .result, .exams {
+    background-color: white;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 32%;
+    min-width: 300px;
+    height: 230px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.4;
+}
+
+.performance {
+    font-size: 24px;
+    color: green;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.attendance {
+    align-items: center;
+}
+
+.donut-chart {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(#007bff 80% 0%, #28a745 0% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.donut-center {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.legend {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.present {
+    background-color: #007bff;
+}
+
+.absent {
+    background-color: #28a745;
+}
+
+.classes p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.result, .exams {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    font-size: 18px;
+}
+.text{
+    font-size: 30px;
+    font-weight: 700;
+}

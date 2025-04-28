@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./login.css";
+import { useNavigate } from "react-router-dom";
 
 
 function Login() {
+  const navigate = useNavigate();
   const [form, setForm] = useState({
     email: "",
     password: "",
@@ -43,13 +45,11 @@ function Login() {
       const json = await res.json();
 
       if (res.ok) {
-        // Handle successful login (e.g., redirect or store token)
         toast.success("Login successful!");
         console.log("Login successful:", json);
-        // Redirect user to dashboard or home page
-        // Example: window.location.href = '/dashboard';
+        localStorage.setItem("userName", json.name);
+        navigate("/dashboard", { replace: true });
       } else {
-        // Handle error if login fails
         toast.error(json.error || "Login failed. Please try again.");
         console.log("Login failed:", json.error);
         setError(json.error || "Login failed. Please try again.");
@@ -104,7 +104,7 @@ function Login() {
             </form>
 
             <p className="account-link">
-              Don’t have an account? <a href="/signup">Sign up</a>
+              Don't have an account? <a href="/signup">Sign up</a>
             </p>
             <p className="recaptcha-text">
               This site is protected by reCAPTCHA and the Google{" "}
@@ -113,7 +113,6 @@ function Login() {
           </div>
         </div>
       </div>
-      {/* Add ToastContainer to show Toastify notifications */}
       <ToastContainer aria-label="notifications" />
     </div>
   );

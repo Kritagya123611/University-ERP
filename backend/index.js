@@ -55,8 +55,6 @@ app.post("/signup", async (req, res) => {
         console.log('Error: User data not returned');
         return res.status(500).json({ error: 'Error: User data not returned' });
     }
-
-    // Return the created user data in the response
     res.status(200).json({ message: "User created successfully", user: data[0] });
 });
 
@@ -64,7 +62,6 @@ app.post("/signup", async (req, res) => {
 app.post("/login", async (req, res) => {
     const { email, password } = req.body;
     try {
-      // Your backend logic here
       const { data: existingUser, error: fetchError } = await supabase
         .from("users")
         .select("*")
@@ -73,7 +70,9 @@ app.post("/login", async (req, res) => {
   
       if (existingUser) {
         console.log("Login successful");
-        res.status(200).json({ message: "Login successful" });
+        res.status(200).json({ message: "Login successful" ,
+          name: existingUser.name
+        });
       } else {
         console.log("Login failed: User not found");
         res.status(400).json({ error: "Login failed: User not found" });
